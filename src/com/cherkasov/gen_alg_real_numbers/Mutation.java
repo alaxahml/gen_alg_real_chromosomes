@@ -9,7 +9,7 @@ public class Mutation {
         double chance1 = Math.random()*1,chance2;
         int ind_num;
         if(chance1 <= chance){
-            double alpha = 0.5*(300);//0.5*(domain of definition mentioned in RulesChecking class)
+            double alpha = 0.5*(100);//0.5*(domain of definition mentioned in RulesChecking class)
             double beta;
             ind_num = (int)(Math.random()*population.size());
             for(int i=0;i<population.get(ind_num).size();++i){
@@ -23,7 +23,7 @@ public class Mutation {
                    else{
                        ai1 = 0;
                    }
-                   beta += ai1*Math.pow(2,-i1);
+                   beta += ai1 * Math.pow(2,-i1);
                 }
                 double temp = population.get(ind_num).get(i);
                 chance2 = (Math.random()*1);

@@ -38,7 +38,7 @@ public class Main {
              population = mutation.operate(population);
              population = selection.select(size, population);
              ++counter;
-         }while (counter!=10000);
+         }while (counter!=100000);
 
          //output of final population
         System.out.println("The result:");

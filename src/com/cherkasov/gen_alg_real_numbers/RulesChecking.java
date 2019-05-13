@@ -1,6 +1,5 @@
 package com.cherkasov.gen_alg_real_numbers;
 
-import java.util.List;
 
 public class RulesChecking {
     public boolean check(Double gen){
